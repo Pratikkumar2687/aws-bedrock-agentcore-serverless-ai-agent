@@ -8,6 +8,7 @@ Explain:
 What problem it solves
 Why AI Agent
 Why serverless
+
 2. Architecture Diagram
 
 Add AWS architecture diagram.
@@ -18,6 +19,7 @@ Serverless API
 RAG-based responses
 Secure AWS integration
 Infrastructure as Code
+
 4. Security Design
 
 Mention:
