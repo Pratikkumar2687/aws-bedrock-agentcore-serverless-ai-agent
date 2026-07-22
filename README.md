@@ -10,7 +10,7 @@ Why AI Agent
 Why serverless
 
 2. Architecture Diagram
-
+------------------------------------------------------------------
                  User
                   |
                   |
@@ -31,7 +31,7 @@ Why serverless
                           |
                     Documents/Data
 
-
+---------------------------------------------------------------------
 Supporting Services:
 
 DynamoDB  → User Preferences
@@ -40,6 +40,7 @@ CloudWatch → Monitoring
 Terraform → Infrastructure
 GitHub Actions → CI/CD
 
+----------------------------------------------------------------------
 
 3. Features
 AI-powered recommendations
