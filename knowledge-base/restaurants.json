@@ -1,1 +1,68 @@
-
+[
+  {
+    "restaurant_id": "veg_001",
+    "name": "Green Leaf Indian Restaurant",
+    "cuisine": "Indian Vegetarian",
+    "location": {
+      "city": "Medford",
+      "state": "Massachusetts",
+      "zip_code": "02155"
+    },
+    "dietary_options": [
+      "Vegetarian",
+      "Vegan",
+      "Gluten Free"
+    ],
+    "specialties": [
+      "South Indian Thali",
+      "Dosa",
+      "Paneer Curry",
+      "Vegetable Biryani"
+    ],
+    "rating": 4.6,
+    "description": "A vegetarian Indian restaurant offering traditional South and North Indian dishes."
+  },
+  {
+    "restaurant_id": "veg_002",
+    "name": "Saravanaa Bhavan",
+    "cuisine": "South Indian Vegetarian",
+    "location": {
+      "city": "Boston",
+      "state": "Massachusetts",
+      "zip_code": "02115"
+    },
+    "dietary_options": [
+      "Vegetarian",
+      "Vegan"
+    ],
+    "specialties": [
+      "Masala Dosa",
+      "Idli",
+      "Vada",
+      "South Indian Meals"
+    ],
+    "rating": 4.5,
+    "description": "Popular vegetarian restaurant specializing in authentic South Indian cuisine."
+  },
+  {
+    "restaurant_id": "veg_003",
+    "name": "Veggie Paradise",
+    "cuisine": "Asian Vegetarian",
+    "location": {
+      "city": "Cambridge",
+      "state": "Massachusetts",
+      "zip_code": "02139"
+    },
+    "dietary_options": [
+      "Vegetarian",
+      "Vegan"
+    ],
+    "specialties": [
+      "Vegetable Noodles",
+      "Tofu Dishes",
+      "Plant Based Meals"
+    ],
+    "rating": 4.4,
+    "description": "Plant-based restaurant offering healthy vegetarian meals."
+  }
+]
