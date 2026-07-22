@@ -43,7 +43,7 @@ AI Agents provide the ability to:
 
 User query:
 
-> "Find the best vegetarian Indian restaurants near ZIP code 02155"
+> "Find the best vegetarian Indian restaurants near ZIP code 02201"
 
 The AI Agent can:
 
