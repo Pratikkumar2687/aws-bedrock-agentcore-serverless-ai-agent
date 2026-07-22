@@ -58,3 +58,13 @@ No hardcoded credentials
 Secrets Manager
 Encryption
 API authentication
+
+5. Deployment
+
+Example:
+
+terraform init
+
+terraform plan
+
+terraform apply
