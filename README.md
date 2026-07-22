@@ -1,3 +1,5 @@
+**This project is a learning/reference implementation. AWS resources have not yet been deployed to a production environment.**
+
 # AWS Bedrock AgentCore Serverless AI Agent
 
 A production-ready serverless AI Agent architecture using **Amazon Bedrock AgentCore**, **Amazon Bedrock**, **AWS Lambda**, **API Gateway**, **RAG (Retrieval-Augmented Generation)**, and secure AWS services to provide intelligent recommendations based on user queries and location.
