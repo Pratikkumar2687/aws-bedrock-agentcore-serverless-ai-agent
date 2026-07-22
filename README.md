@@ -40,6 +40,7 @@ CloudWatch → Monitoring
 Terraform → Infrastructure
 GitHub Actions → CI/CD
 
+
 3. Features
 AI-powered recommendations
 Serverless API
