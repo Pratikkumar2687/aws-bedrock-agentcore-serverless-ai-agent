@@ -1,86 +1,72 @@
 #############################################
-# S3 Bucket - AI Knowledge Base Storage
+# Terraform Outputs
 #############################################
 
 
-resource "aws_s3_bucket" "knowledge_base" {
+output "aws_region" {
 
-  bucket = "${var.project_name}-knowledge-base-${var.environment}"
+  description = "AWS deployment region"
 
-  force_destroy = var.s3_force_destroy
+  value = var.aws_region
+
+}
 
 
-  tags = {
 
-    Name = "${var.project_name}-knowledge-base"
+output "project_name" {
 
-    Environment = var.environment
+  description = "Project name"
 
-    Purpose = "Bedrock RAG Knowledge Base"
-
-  }
+  value = var.project_name
 
 }
 
 
 
 #############################################
-# Enable S3 Encryption
+# S3 Outputs
 #############################################
 
-resource "aws_s3_bucket_server_side_encryption_configuration" "knowledge_base_encryption" {
 
-  bucket = aws_s3_bucket.knowledge_base.id
+output "knowledge_base_bucket_name" {
+
+  description = "S3 bucket for Bedrock Knowledge Base documents"
+
+  value = aws_s3_bucket.knowledge_base.bucket
+
+}
 
 
-  rule {
 
-    apply_server_side_encryption_by_default {
+output "knowledge_base_bucket_arn" {
 
-      sse_algorithm = "AES256"
+  description = "S3 bucket ARN"
 
-    }
-
-  }
+  value = aws_s3_bucket.knowledge_base.arn
 
 }
 
 
 
 #############################################
-# Block Public Access
+# DynamoDB Outputs
 #############################################
 
-resource "aws_s3_bucket_public_access_block" "knowledge_base_block" {
 
-  bucket = aws_s3_bucket.knowledge_base.id
+output "user_preferences_table_name" {
 
+  description = "DynamoDB User Preferences table name"
 
-  block_public_acls = true
-
-  block_public_policy = true
-
-  ignore_public_acls = true
-
-  restrict_public_buckets = true
+  value = aws_dynamodb_table.user_preferences.name
 
 }
 
 
 
-#############################################
-# Versioning
-#############################################
+output "user_preferences_table_arn" {
 
-resource "aws_s3_bucket_versioning" "knowledge_base_versioning" {
+  description = "DynamoDB User Preferences table ARN"
 
-  bucket = aws_s3_bucket.knowledge_base.id
-
-
-  versioning_configuration {
-
-    status = "Enabled"
-
-  }
+  value = aws_dynamodb_table.user_preferences.arn
 
 }
