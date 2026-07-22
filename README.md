@@ -27,7 +27,7 @@ AI Agents provide the ability to:
 
 Example use case:
 
-> "Find the best vegetarian Indian restaurants near ZIP code 02155"
+> "Find the best vegetarian Indian restaurants near ZIP code 02108–02298"
 
 The AI Agent can understand the request, retrieve location-based information, analyze available data, and provide relevant recommendations.
 
