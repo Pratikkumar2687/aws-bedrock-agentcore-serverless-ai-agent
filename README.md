@@ -11,7 +11,34 @@ Why serverless
 
 2. Architecture Diagram
 
-Add AWS architecture diagram.
+                 User
+                  |
+                  |
+          API Gateway
+                  |
+                  |
+              Lambda
+                  |
+                  |
+        Bedrock AgentCore
+                  |
+       --------------------
+       |                  |
+ Amazon Bedrock       Knowledge Base
+       |                  |
+       |                  |
+   LLM Model            S3
+                          |
+                    Documents/Data
+
+
+Supporting Services:
+
+DynamoDB  → User Preferences
+IAM       → Security
+CloudWatch → Monitoring
+Terraform → Infrastructure
+GitHub Actions → CI/CD
 
 3. Features
 AI-powered recommendations
